@@ -79,11 +79,11 @@ int main() {
    densidade_pop2 = (populacao2 / area2);
    pib_per_capita2 = (pib2 / populacao2);
 
-   printf("A densidade populacional do Jogador %s e: %f \n", nome_jogador, densidade_pop);
-   printf("O PIB per capita do Jogador %s e: %f.2 \n",nome_jogador, pib_per_capita);
+   printf("A densidade populacional do Estado %s e: %f \n", estado, densidade_pop);
+   printf("O PIB per capita do Estado %s e: %f.2 \n",estado, pib_per_capita);
 
-   printf("A densidade populacional do Jogador %s e: %f \n", nome_jogador2, densidade_pop2);
-   printf("O PIB per capita do Jogador %s e: %f.2 \n\n",nome_jogador2, pib_per_capita2);
+   printf("A densidade populacional do Estado %s e: %f \n", estado2, densidade_pop2);
+   printf("O PIB per capita do Estado %s e: %f.2 \n\n",estado2, pib_per_capita2);
 
    if (area == area2) {
       printf("Area do Estado %s: %f.2 \n Area do Estado %s: %f.2 \n As duas areas sao iguais. Empatou!", estado, area, estado2, area2);
@@ -92,9 +92,9 @@ int main() {
 
    //Comparação de valores de atributos. Atributo escolhido: Area
    if (area > area2) {
-      printf("Area do Estado %s: %f.2 \n Area do estado %s: %f.2 \n A area do Estado %s e maior do que a area do Estado %s. Jogador %s venceu!\n", estado, area, estado2, area2, estado, estado2, nome_jogador);
+      printf("Area do Estado %s: %f.2 \n Area do estado %s: %f.2 \n A area do Estado %s e maior do que a area do Estado %s. Jogador %s venceu!\n\n", estado, area, estado2, area2, estado, estado2, nome_jogador);
    } else{
-      printf("Area do Estado %s: %f.2 \n Area do Estado %s: %f.2 \n A area do Estado %s e maior do que a area do Estado %s. Jogador %s venceu!\n", estado2, area2, estado, area, estado2, estado, nome_jogador2);
+      printf("Area do Estado %s: %f.2 \n Area do Estado %s: %f.2 \n A area do Estado %s e maior do que a area do Estado %s. Jogador %s venceu!\n\n", estado2, area2, estado, area, estado2, estado, nome_jogador2);
    }
    return 0;
 }
